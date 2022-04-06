@@ -1,8 +1,9 @@
 import "./Header.css";
-
+// import photo "../../assets/ljdhalllk.jpeg"
 function Header() {
     return (
         <header>
+            {/* <img src={photo}/> */}
             <h1>Souvenir shop karakol</h1>
             <h2>The best places to visit for shopping—and how to get all your new stuff home.</h2>
             <p>
