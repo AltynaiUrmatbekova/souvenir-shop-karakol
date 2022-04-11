@@ -1,0 +1,12 @@
+.Header {
+    min-height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1rem;
+    background-size: 50%;
+}
+.Header h1 {
+    margin: 0;
+
+}

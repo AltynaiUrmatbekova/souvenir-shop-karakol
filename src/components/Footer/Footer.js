@@ -2,7 +2,9 @@ import "./Footer.css";
 
 function Footer() {
     return (
-    <footer>Copyright 2022</footer>
+    <footer className="Footer">
+        Copyright 2022
+        </footer>
     )
 }
 
