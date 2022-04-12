@@ -1,9 +1,10 @@
 import "./Nav.css";
+import Logo from "../ui/Logo/Logo"
 
 function Nav() {
     return (
         <nav className="Nav">
-            <div>Souvenir shop Karakol</div>
+           <Logo /> 
             <ul>
                 <li><a href="#">Home</a></li>
                 <li><a href="#">About</a></li>

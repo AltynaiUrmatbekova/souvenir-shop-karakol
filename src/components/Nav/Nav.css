@@ -8,6 +8,11 @@
     padding: 1rem;
     
 }
+.Nav .logo {
+    padding: 0 1.5rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
 .Nav ul {
     list-style: none;
     padding: 0;
@@ -15,10 +20,10 @@
     display: flex;
 }
 .Nav a {
-    padding: .5rem 1rem;
+    padding: 1rem 1.5rem;
     display: block;
     color: black;
-    font-size: 1rem;
+    font-size: 1.2rem;
     text-decoration: none;
     
 }
