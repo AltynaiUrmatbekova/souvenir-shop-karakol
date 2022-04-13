@@ -8,26 +8,10 @@
     padding: 1rem;
     
 }
-.Nav .logo {
-    padding: 0 1.5rem;
-    font-size: 1.2rem;
-    font-weight: bold;
-}
+
 .Nav ul {
     list-style: none;
     padding: 0;
     margin: 0;
     display: flex;
-}
-.Nav a {
-    padding: 1rem 1.5rem;
-    display: block;
-    color: black;
-    font-size: 1.2rem;
-    text-decoration: none;
-    
-}
-.Nav a:hover {
-    background-color: rgb(231, 237, 243);
-
 }

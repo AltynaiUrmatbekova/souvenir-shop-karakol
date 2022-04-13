@@ -6,11 +6,9 @@ function Nav() {
         <nav className="Nav">
            <Logo /> 
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Categories</a></li>
-                <li><a href="#">Product</a></li>
-                <li><a href="#">Contact</a></li>
+               <NavItem url="/">Home</NavItem>
+               <NavItem url="/">Product</NavItem>
+               <NavItem url="/">Contact</NavItem>
                 
             </ul>
         </nav>
