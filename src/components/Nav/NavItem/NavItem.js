@@ -1,16 +1,11 @@
+import { NavLink } from "react-router-dom";
 import "./NavItem.css";
 
 function NavItem(props) {
-    const classNames = [];
-    if (props.active) {
-    classNames.push('active');
-}
-return (
+  return (
     <li className="NavItem">
-        <a href={props.url}
-        className={classNames.join('')}>
-        {props.children}</a>
-        </li>
-);
+      <NavLink to={props.url}>{props.children}</NavLink>
+    </li>
+  );
 }
 export default NavItem;
