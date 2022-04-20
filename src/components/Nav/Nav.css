@@ -1,14 +1,16 @@
 .Nav {
+    
+    background-color: aliceblue;
+    color: black;
+    
+    
+    
+}
+.Nav .container {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: aliceblue;
-    color: black;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    padding: 1rem;
-    
 }
-
 .Nav ul {
     list-style: none;
     padding: 0;

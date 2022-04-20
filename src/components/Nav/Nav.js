@@ -6,11 +6,14 @@ function Nav() {
   return (
     <nav className="Nav">
       <Logo />
-      <ul>
+      <div className="container">
+        <Logo />
+    <ul>
         <NavItem url="/">Home</NavItem>
         <NavItem url="/products"> Product</NavItem>
         <NavItem url="/contacts">Contact</NavItem>
       </ul>
+    </div>
     </nav>
   );
 }
