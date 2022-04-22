@@ -8,13 +8,13 @@ function App() {
   return (
     <div className="App">
       <Layout>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/products" element={<Products />} />
-        <Route path="/contacts" element={<Contants />} />
-      </Routes>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/products" element={<Products />} />
+          <Route path="/contacts" element={<Contants />} />
+        </Routes>
       </Layout>
-      </div>
+    </div>
   );
 }
 
