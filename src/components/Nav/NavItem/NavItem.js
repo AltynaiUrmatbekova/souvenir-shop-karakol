@@ -4,7 +4,9 @@ import "./NavItem.css";
 function NavItem(props) {
   return (
     <li className="NavItem">
-      <NavLink to={props.url}>{props.children}</NavLink>
+      <NavLink to={props.url}>
+        {props.children}
+        </NavLink>
     </li>
   );
 }

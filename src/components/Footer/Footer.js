@@ -6,7 +6,6 @@ function Footer() {
         <div className="container"> 
             Copyright 2022
             </div>
-       
         </footer>
     )
 }
