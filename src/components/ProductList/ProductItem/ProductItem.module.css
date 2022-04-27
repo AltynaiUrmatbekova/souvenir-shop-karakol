@@ -3,7 +3,6 @@
     object-fit: cover;
     object-position: center;
   
-    border-radius: 2rem;
     box-shadow: 0 0 10px rgba(0, 0, 0, .3);
     z-index: 2;
   }
@@ -18,26 +17,26 @@
     bottom: -3.5rem;
     left: 1.5rem;
     right: 1.5rem;
-    z-index: 1;
+    z-index: 1,5;
     
-    background-color: rgb(63, 29, 5);
-    color: white;
+    background-color: burlywood;
+    color: black;
     font-weight: bold;
-    font-size: 1.3rem;
+    font-size: 1rem;
     padding: .8rem 1rem 1.2rem;
     text-align: center;
-    border-radius: 1.5rem;
-    border-top-left-radius: 0;
+       border-top-left-radius: 0;
     border-top-right-radius: 0;
     box-shadow: 0 0 10px rgba(0, 0, 0, .3);
   }
   .ProductItem .price {
+    background-color: burlywood;
     position: absolute;
     bottom: -1.5rem;
     z-index: 3;
     right: 0;
     
-    background-color: rgb(63, 29, 5);
+    
     color: white;
     font-weight: bold;
     font-size: 1.3rem;
