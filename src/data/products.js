@@ -1,4 +1,6 @@
 import productImage from "../assets/honey.jpeg";
+import productImage2 from "../assets/dandelion.jpeg";
+import productImage3 from "../assets/orange juice7.jpeg";
 
 const products = [
   {
@@ -9,14 +11,14 @@ const products = [
     price: 15,
   },
   {
-    image: productImage,
+    image: productImage2,
     productId: "mountain-honey",
     title: "Mountain-honey",
     description: `he variety of honey produced by honey bees (the genus Apis) is the best-known, due to its worldwide commercial production and human consumption.[4] Honey is collected from wild bee colonies, or from hives of domesticated bees, a practice known as beekeeping or apiculture (meliponiculture in the case of stingless bees)`,
     price: 11,
   },
   {
-    image: productImage,
+    image: productImage3,
     productId: "seabuckthorn-jam",
     title: "Seabuckthorn jam",
     description: `Honey is produced by bees collecting nectar and honeydew for use as sugars consumed to support metabolism of muscle activity during foraging or to be stored as a long-term food supply.[14][15] During foraging, bees use part of the nectar collected to support metabolic activity of flight muscles, with the majority of collected nectar destined for regurgitation, digestion, and storage as honey.[14][16] In cold weather or when other food sources are scarce, adult and larval bees use stored honey as food.`,
