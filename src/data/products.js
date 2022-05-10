@@ -56,7 +56,7 @@ export function getProducts() {
   return products;
 }
 
-// dark-roast
+
 export function getProduct(productId) {
   return products[
     products.findIndex(
