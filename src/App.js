@@ -3,6 +3,8 @@ import Contaсts from "./pages/Contacts";
 import Products from "./pages/Products";
 import { Route, Routes } from "react-router-dom";
 import Layout from "./components/Layout/Layout";
+import Product from "./pages/Product";
+import NotFound from "./pages/NotFound";
 
 function App() {
   return (
@@ -13,7 +15,7 @@ function App() {
           <Route path="/products" element={<Products />} />
           <Route path="/products/:productId" element={<Products />} />
           <Route path="/contacts" element={<Contaсts />} />
-          {/* <Route path="*" element={<NotFound />} /> */}
+          <Route path="*" element={<NotFound />} />
         </Routes>
       </Layout>
     </div>
