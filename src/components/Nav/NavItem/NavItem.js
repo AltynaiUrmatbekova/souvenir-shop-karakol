@@ -6,8 +6,9 @@ function NavItem(props) {
     <li className="NavItem">
       <NavLink to={props.url}>
         {props.children}
-        </NavLink>
+      </NavLink>
     </li>
   );
 }
+
 export default NavItem;

@@ -1,0 +1,18 @@
+.Toolbar {
+    background-color: burlywood;
+    color: black;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .3);
+  }
+  .Toolbar .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 987px;
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+  @media (max-width: 620px) {
+    .Toolbar ul {
+      display: none;
+    }
+  }

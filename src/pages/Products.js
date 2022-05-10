@@ -2,6 +2,7 @@ import Header from "../components/Header/Header";
 import headerImage from "../assets/dandelion.jpeg";
 import ProductList from "../components/ProductList/ProductList"
 import { getProducts } from "../data/products";
+
 function Products() {
     
     return (

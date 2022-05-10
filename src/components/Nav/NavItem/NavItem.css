@@ -14,3 +14,9 @@
     background-color: rgb(247, 241, 233);
 
 }
+@media (max-width: 620px) {
+    .Nav a {
+        border-bottom: none;
+        border-left: 5px solid transparent;
+    }
+}
