@@ -20,19 +20,18 @@
     z-index: 1,5;
     
     background-color: burlywood;
-    color: black;
+    color: white;
     font-weight: bold;
     font-size: 1rem;
     padding: .8rem 1rem 1.2rem;
     text-align: center;
-       border-top-left-radius: 0;
-    border-top-right-radius: 0;
+    border-radius: 50%;
     box-shadow: 0 0 10px rgba(0, 0, 0, .3);
   }
   .ProductItem .price {
     background-color: burlywood;
     position: absolute;
-    bottom: -1.5rem;
+    bottom: 5rem;
     z-index: 3;
     right: 0;
     

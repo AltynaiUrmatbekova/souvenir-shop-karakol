@@ -1,5 +1,5 @@
 import Header from "../components/Header/Header";
-import headerImage from "../assets/jam.jpeg"
+import headerImage from "../assets/sea jam.jpeg"
 
 function Contacts() {
     return (

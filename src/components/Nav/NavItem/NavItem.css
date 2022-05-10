@@ -1,7 +1,7 @@
 .NavItem a {
     padding: .3rem .5rem;
     display: block;
-    color: black;
+    color: white;
     font-size: 1.2rem;
     text-decoration: none;
     border-bottom: 3px solid transparent;
@@ -11,7 +11,13 @@
     border-color: white;
 }
 .NavItem a:hover {
+    opacity: .5;
+    transform: translate(1);
+  }
+.NavItem a:hover::after {
     background-color: rgb(247, 241, 233);
+    transform: scaleX(2);
+    transition: transform 0.3s;
 
 }
 @media (max-width: 620px) {
