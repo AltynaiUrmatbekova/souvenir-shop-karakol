@@ -1,10 +1,11 @@
 .NavItem a {
     padding: .3rem .5rem;
     display: block;
-    color: white;
+    color: black;
     font-size: 1.2rem;
     text-decoration: none;
     border-bottom: 3px solid transparent;
+    font-family: cursive;
     
 }
 .NavItem a.active {
@@ -12,7 +13,8 @@
 }
 .NavItem a:hover {
     opacity: .5;
-    transform: translate(1);
+    transform: translateX(1);
+    border-bottom: 2px solid black;
   }
 .NavItem a:hover::after {
     background-color: rgb(247, 241, 233);

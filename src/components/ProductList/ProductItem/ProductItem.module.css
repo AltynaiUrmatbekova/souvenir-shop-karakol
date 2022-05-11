@@ -10,7 +10,7 @@
     position: relative;
     flex: 0 0 30%;
     margin-bottom: 5rem;
-    margin-top: 1rem;
+    margin-top: 10rem;
   }
   .ProductItem a {
     position: absolute;
@@ -19,28 +19,25 @@
     right: 1.5rem;
     z-index: 1,5;
     
-    background-color: burlywood;
-    color: white;
+    
+    color: black;
     font-weight: bold;
-    font-size: 1rem;
+    font-size: 1.3rem;
     padding: .8rem 1rem 1.2rem;
     text-align: center;
-    border-radius: 50%;
-    box-shadow: 0 0 10px rgba(0, 0, 0, .3);
+   
   }
   .ProductItem .price {
-    background-color: burlywood;
+   
     position: absolute;
-    bottom: 5rem;
+    bottom: -3.5rem;
     z-index: 3;
     right: 0;
     
-    
-    color: white;
+    color: black;
     font-weight: bold;
     font-size: 1.3rem;
     padding: 1rem;
     text-align: center;
-    border-radius: 50%;
-    box-shadow: 0 0 10px rgba(0, 0, 0, .3);
+  
   }
