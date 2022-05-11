@@ -15,10 +15,11 @@
 }
 .Header section {
     color: white;
-    background-color: burlywood;
+    background-color: rgb(68, 6, 6);
     position: absolute;
-    bottom: -3rem;
-    right: 2rem;
+    top: 3rem;
+    align-items: center;
+    text-align: center;
     max-width: 500px;
     margin-left: 2rem;
   
@@ -28,5 +29,9 @@
   }
   .Header h1 {
     font-size: 2rem;
+    font-family: 'Beau Rivage', cursive;
+  }
+  .main h2 {
+    background-color: burlywood;
     font-family: 'Beau Rivage', cursive;
   }
