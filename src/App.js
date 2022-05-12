@@ -1,5 +1,5 @@
 import Home from "./pages/Home";
-import Contaсts from "./pages/contacts/Contacts";
+import Contacts from "./pages/Contacts";
 import Products from "./pages/Products";
 import { Route, Routes } from "react-router-dom";
 import Layout from "./components/Layout/Layout";
@@ -13,8 +13,8 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/products" element={<Products />} />
-          <Route path="/products/:productId" element={<Products />} />
-          <Route path="/contacts" element={<Contaсts />} />
+          <Route path="/products/:productId" element={<Product />} />
+          <Route path="/contacts" element={<Contacts />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </Layout>
