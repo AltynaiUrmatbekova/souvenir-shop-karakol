@@ -1,8 +1,8 @@
 import Home from "./pages/Home";
-import Contacts from "./pages/Contacts";
+import Layout from "./components/Layout/Layout"
 import Products from "./pages/Products";
 import { Route, Routes } from "react-router-dom";
-import Layout from "./components/Layout/Layout";
+import Contacts from "./pages/contacts/Contacts"
 import Product from "./pages/Product";
 import NotFound from "./pages/NotFound";
 
