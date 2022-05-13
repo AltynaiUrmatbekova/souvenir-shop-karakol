@@ -1,5 +1,5 @@
 import Header from "../components/Header/Header";
-import headerImage from "../assets/slepetes.webp";
+import headerImage from "../assets/lenta.png";
 import ProductList from "../components/ProductList/ProductList"
 import { getProducts } from "../data/products";
 
