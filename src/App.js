@@ -5,6 +5,8 @@ import { Route, Routes } from "react-router-dom";
 import Contacts from "./pages/contacts/Contacts"
 import Product from "./pages/Product";
 import NotFound from "./pages/NotFound";
+import Categories from "./pages/Categories";
+import Category from "./pages/Category";
 
 function App() {
   return (
@@ -14,6 +16,8 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/products" element={<Products />} />
           <Route path="/products/:productId" element={<Product />} />
+          <Route path="/categories" element={<Categories />} />
+          <Route path="/categories/:categoryId" element={<Category />} />
           <Route path="/contacts" element={<Contacts />} />
           <Route path="*" element={<NotFound />} />
         </Routes>

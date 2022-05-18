@@ -6,7 +6,7 @@ function Nav() {
   return (
         <ul className={classes.Nav}>
           <NavItem url="/">Home</NavItem>
-          <NavItem url="/products"> Product</NavItem>
+          <NavItem url="/products"> Products</NavItem>
           <NavItem url="/contacts">Contact</NavItem>
         </ul>
   );

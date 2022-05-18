@@ -6,13 +6,6 @@ import productImage5 from "../assets/telenok.jpeg";
 import productImage6 from "../assets/bag.jpg";
 
 
-// import productImage from "../assets/honey.jpeg";
-// import productImage2 from "../assets/dandelion.jpeg";
-// import productImage3 from "../assets/pine.jpeg";
-// import productImage4 from "../assets/slippers.jpeg";
-// import productImage5 from "../assets/wool bag.jpeg";
-// import productImage6 from "../assets/cream.jpeg";
-
 const products = [
   {
     image: productImage,
@@ -59,7 +52,10 @@ const products = [
   }
 ];
 
-export function getProducts() {
+export function getProducts(categoryID) {
+  if (categoryID) {
+    return products.filter(product => product.categoryID === categoryID);
+  }
   return products;
 }
 
