@@ -13,7 +13,7 @@
 }
 .NavItem a:hover {
     opacity: .5;
-    transform: translateX(1);
+    transform: rotate(1);
     border-bottom: 2px solid black;
   }
 .NavItem a:hover::after {
