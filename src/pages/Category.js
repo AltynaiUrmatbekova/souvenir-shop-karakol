@@ -1,5 +1,6 @@
 import { useParams } from "react-router-dom";
 import Header from "../components/Header/Header";
+import Main from "../components/Main/Main";
 import ProductList from "../components/ProductList/ProductList";
 import { getCategory } from "../data/categories";
 import { getProducts } from "../data/products";
@@ -10,14 +11,15 @@ function Category() {
   if (!category) {
     return null;
   }
-  
+
   return (
     <div className="Category">
-      <Header  title={category.title} image={category.image}>
+      <Header title={category.title} image={category.image}>
         {category.description}
-       
       </Header>
-      <ProductList products={getProducts(category.categoryId)}/>
+      <Main>
+        <ProductList products={getProducts(category.categoryId)} />
+      </Main>
     </div>
   );
 }
