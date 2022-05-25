@@ -9,8 +9,14 @@
     
 }
 .NavItem a.active {
-    border-color: white;
-}
+    
+        color: white;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        border-bottom: 2px solid white;
+        background-color: black;
+      }
+
 .NavItem a:hover {
     opacity: .5;
     transform: rotate(1);
