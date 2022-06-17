@@ -1,6 +1,6 @@
-import giftImage from "../assets/gift.webp";
-import naturalImage from "../assets/key.jpg";
-import accessoriesImage from "../assets/access.jpg";
+import giftImage from "../assets/slipper.jpeg";
+import naturalImage from "../assets/slippers.jpeg";
+import accessoriesImage from "../assets/slipperss.jpeg";
 
 const categories = [
     {
