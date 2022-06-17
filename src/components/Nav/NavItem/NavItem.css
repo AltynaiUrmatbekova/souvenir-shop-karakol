@@ -2,19 +2,21 @@
     padding: .3rem .5rem;
     display: block;
     color: black;
-    font-size: 1.2rem;
+    font-size: 1rem;
     text-decoration: none;
     border-bottom: 3px solid transparent;
     font-family: cursive;
     
 }
+
+
 .NavItem a.active {
     
-        color: white;
+        color: brown;
         cursor: pointer;
         transition: all 0.3s ease;
         border-bottom: 2px solid white;
-        background-color: black;
+        /* background-color: black; */
       }
 
 .NavItem a:hover {
