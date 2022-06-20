@@ -1,10 +1,11 @@
 import Header from "../components/Header/Header";
 import headerImage from "../assets/slipper.jpeg";
-import { getCategories } from "../data/categories";
-import CategoryList from "../components/CategoryList/CategoryList";
+import { getHomemades } from "../data/homemade";
+import HomemadeList from "../components/HomemadeList/HomemadeList";
 import Main from "../components/Main/Main";
 
-function Categories() {
+
+function Homemades() {
   return (
     <>
       <Header
@@ -17,9 +18,9 @@ function Categories() {
       </Header>
 
       <Main>
-        <CategoryList categories={getCategories()} />
+        <HomemadeList homemades={getHomemades()} />
       </Main>
     </>
   );
 }
-export default Categories;
+export default Homemades;
