@@ -4,13 +4,10 @@ import icon from "../../assets/shopping-cart-icon.jpg";
 import search from "../../assets/search.png";
 import telephone from "../../assets/phone.png";
 
-
 function Nav() {
-
   const styles = {
     width: "40px",
     height: "40px",
-    
   }
   const styles1 = {
     width: "40px",
@@ -21,7 +18,6 @@ function Nav() {
     height: "20px",
   }
   
-
   return (
         <ul className={classes.Nav}>
           <NavItem url="/">Home</NavItem>

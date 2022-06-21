@@ -1,7 +1,51 @@
 .Footer {
-    color: black;
-    box-shadow: 0 0 10px rgba(0, 0, 0, .3);
-    padding: 1rem;
-    text-align: center;
-    font-family: cursive;
+    max-width: 100%;
+    margin: 0 auto;
+    padding-bottom: 30px;
 }
+  .Footer ul li {
+    list-style: none;
+  }
+  
+  .Footer ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 1.5rem;
+  
+  }
+  .Footer ul li a {
+    font-size: 18px;
+    color: #f0542c;
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+  
+    text-align: center;
+    background: transparent;
+  
+    border-radius: 50%;
+    padding: 0;
+    margin-right: 10px;
+    line-height: 40px !important;
+    border: 1px dashed black;
+    transition: .7s;
+  }
+  .Footer ul li a:hover{
+    color: white;
+    background-color: #f0542c;
+  }
+  .footer-logo{
+    max-width: 690px;
+    padding: 1rem;
+    font-size: 15px;
+    color: #919191;
+   
+    margin: 1.5rem auto 0 auto;
+    font-weight: 300;
+    text-align: center;
+  
+    font-family: "Raleway", sans-serif;
+    border-top: 1px solid #919191;
+  
+  }

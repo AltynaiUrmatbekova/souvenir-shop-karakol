@@ -5,7 +5,6 @@ import ProductList from "../components/ProductList/ProductList";
 import { getHomemade } from "../data/homemade";
 import { getProducts } from "../data/products";
 
-
 function Homemade() {
   const params = useParams();
   const homemade = getHomemade(params.homemadeId);
@@ -13,7 +12,6 @@ function Homemade() {
   if (!homemade) {
     return null;
   }
-
   return (
     <div className="Homemade">
       <Header title={homemade.title} image={homemade.image}>
