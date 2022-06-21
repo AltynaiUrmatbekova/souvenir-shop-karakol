@@ -47,6 +47,7 @@ const products = [
     image: productImage6,
     homemadeId: "homemadeId",
     productId: "bag",
+    categoryId: "natural",
     title: "Bag",
     description: `The physical properties of honey vary, depending on water content, the type of flora used to produce it (pasturage), temperature, and the proportion of the specific sugars it contains. Fresh honey is a supersaturated liquid, containing more sugar than the water can typically dissolve at ambient temperatures. At room temperature, honey is a supercooled liquid, in which the glucose precipitates into solid granules. This forms a semisolid solution of precipitated glucose crystals in a solution of fructose and other ingredients.`,
     price: 12,

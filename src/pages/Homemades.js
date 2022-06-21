@@ -16,6 +16,9 @@ function Homemades() {
         the fun of exploring a new place, and you get to bring a little piece of
         it home with you!
       </Header>
+      <div className="Souvenir">Souvenir shopping is one of the true joys of travelling. It’s part of
+        the fun of exploring a new place, and you get to bring a little piece of
+        it home with you!</div>
 
       <Main>
         <HomemadeList homemades={getHomemades()} />

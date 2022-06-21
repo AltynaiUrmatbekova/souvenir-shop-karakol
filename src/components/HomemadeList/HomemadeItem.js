@@ -7,7 +7,6 @@ function HomemadeItem({ homemade }) {
       <img src={homemade.image} alt={homemade.title} />
       <div className={classes.container}>
         <Link to={"/homemades/" + homemade.homemadeId}>{homemade.title} </Link>
-      
       </div>
     </div>
   );
