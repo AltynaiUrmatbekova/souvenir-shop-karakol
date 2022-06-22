@@ -2,7 +2,7 @@ import Header from "../components/Header/Header";
 import headerImage from "../assets/cups.jpg";
 import CategoryList from "../components/CategoryList/CategoryList";
 import { getCategories } from "../data/categories";
-import Main from "../components/Main/Main"
+import Main from "../components/Main/Main";
 function Home() {
   return (
     <>
@@ -13,7 +13,6 @@ function Home() {
       </Header>
       <Main>
         <CategoryList categories={getCategories()} />
-       
       </Main>
     </>
   );

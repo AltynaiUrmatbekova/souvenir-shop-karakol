@@ -13,9 +13,7 @@ function Homemade() {
 
   return (
     <>
-      <Header
-        title={homemade.title}
-        image={homemade.image}>
+      <Header title={homemade.title} image={homemade.image}>
         {homemade.description}
       </Header>
     </>

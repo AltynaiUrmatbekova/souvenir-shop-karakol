@@ -5,7 +5,6 @@ import productImage4 from "../assets/kalpak.jpg";
 import productImage5 from "../assets/telenok.jpeg";
 import productImage6 from "../assets/bag.jpg";
 
-
 const homemades = [
   {
     image: productImage,
@@ -49,7 +48,7 @@ const homemades = [
     title: "Bag",
     description: `The physical properties of honey vary, depending on water content, the type of flora used to produce it (pasturage), temperature, and the proportion of the specific sugars it contains. Fresh honey is a supersaturated liquid, containing more sugar than the water can typically dissolve at ambient temperatures. At room temperature, honey is a supercooled liquid, in which the glucose precipitates into solid granules. This forms a semisolid solution of precipitated glucose crystals in a solution of fructose and other ingredients.`,
     price: 12,
-  }
+  },
 ];
 
 export function getHomemades() {
@@ -58,8 +57,6 @@ export function getHomemades() {
 
 export function getHomemade(homemadeId) {
   return homemades[
-    homemades.findIndex(
-      homemade =>  homemade.homemadeId === homemadeId
-    )
+    homemades.findIndex((homemade) => homemade.homemadeId === homemadeId)
   ];
 }

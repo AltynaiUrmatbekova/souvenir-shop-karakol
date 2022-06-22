@@ -16,7 +16,7 @@ function Homemades() {
             <h2>We provide natural, felt and wool products!</h2>
         </main> */}
       <Main>
-        <HomemadeList homemades={getHomemades()}/>
+        <HomemadeList homemades={getHomemades()} />
       </Main>
     </>
   );
