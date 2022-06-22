@@ -12,9 +12,7 @@ function Product() {
 
   return (
     <>
-      <Header
-        title={product.title}
-        image={product.image}>
+      <Header title={product.title} image={product.image}>
         {product.description}
       </Header>
     </>

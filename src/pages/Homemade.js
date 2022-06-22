@@ -5,7 +5,6 @@ import { getHomemade } from "../data/homemades";
 function Homemade() {
   const params = useParams();
   const homemade = getHomemade(params.homemadeId);
-  console.log(getHomemade(params.homemadeId));
 
   if (!homemade) {
     return null;
@@ -13,7 +12,9 @@ function Homemade() {
 
   return (
     <>
-      <Header title={homemade.title} image={homemade.image}>
+      <Header
+        title={homemade.title}
+        image={homemade.image}>
         {homemade.description}
       </Header>
     </>
