@@ -5,9 +5,7 @@ import { getProducts } from "../data/products";
 import Main from "../components/Main/Main";
 
 function Products() {
-    
     return (
-        
         <>
         <Header 
         title="Choose the best quality!"
@@ -20,7 +18,6 @@ function Products() {
         <Main>
         <ProductList products={getProducts()} />
         </Main>
-        
         </>
     );
 }

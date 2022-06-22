@@ -3,8 +3,13 @@ import NavItem from "./NavItem/NavItem";
 import icon from "../../assets/shopping-cart-icon.jpg";
 import search from "../../assets/search.png";
 import telephone from "../../assets/phone.png";
+import { useSelector } from "react-redux";
 
 function Nav() {
+  const number = useSelector(store => {
+    return Object.values(store.cart.items).reduce((sum, number) => sum + number, 0);
+  });
+
   const styles = {
     width: "40px",
     height: "40px",
@@ -25,7 +30,7 @@ function Nav() {
       <NavItem url="/homemades">Homemades</NavItem>
       <NavItem url="/contacts">Contact</NavItem>
       <NavItem url="">
-        <img src={icon} alt="cart" style={styles} />
+        <img src={icon} alt="cart" style={styles} />({number})
       </NavItem>
       <NavItem url="#">
         <img src={search} alt="cart1" style={styles1} />
