@@ -13,13 +13,7 @@ function Home() {
       </Header>
       <Main>
         <CategoryList categories={getCategories()} />
-        <ul>
-          <li>Convenient location</li>
-          <li>Special attention to every guest</li>
-          <li>Secured parking</li>
-          <li>Available prices</li>
-          <li>English speaking staff</li>
-        </ul>
+       
       </Main>
     </>
   );

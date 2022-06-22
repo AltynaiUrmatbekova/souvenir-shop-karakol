@@ -18,6 +18,13 @@ function Contacts() {
           <li>Karakol Kyrgyzstan</li>
           <li>Postcode: 722200</li>
         </ul>
+        <ul>
+          <li>Convenient location</li>
+          <li>Special attention to every guest</li>
+          <li>Secured parking</li>
+          <li>Available prices</li>
+          <li>English speaking staff</li>
+        </ul>
       </div>
     </>
   );
