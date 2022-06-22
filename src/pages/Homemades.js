@@ -7,14 +7,11 @@ import { getHomemades } from "../data/homemades";
 function Homemades() {
   return (
     <>
-      <Header title="Choose the best quality!" image={headerImage}>
-        Souvenir shopping is one of the true joys of travelling. It’s part of
-        the fun of exploring a new place, and you get to bring a little piece of
-        it home with you!
+      <Header title=" We provide natural, felt and wool products!" image={headerImage}>
+      <p>
+      Whatever the season, however intensive the activity, wool insulation layer naturally adjusts to your body's thermal balance, improves perspiration comfort and keeps you drier from the inside, making it perfect for high-performance, outerwear apparel.
+        </p>
       </Header>
-      {/* {<main>
-            <h2>We provide natural, felt and wool products!</h2>
-        </main> */}
       <Main>
         <HomemadeList homemades={getHomemades()} />
       </Main>
