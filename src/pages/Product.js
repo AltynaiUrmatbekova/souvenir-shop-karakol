@@ -10,11 +10,12 @@ function Product() {
   if (!product) {
     return null;
   }
-
   return (
     <>
-      <Header title={product.title} image={product.image}>
-        {product.description}
+      <Header 
+      title={product.title} 
+      image={product.image}>
+      {product.description}
       </Header>
       <CartButton productId={params.productId}/>
     </>

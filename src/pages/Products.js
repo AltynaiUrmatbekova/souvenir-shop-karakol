@@ -1,5 +1,5 @@
 import Header from "../components/Header/Header";
-import headerImage from "../assets/lenta.png";
+import headerImage from "../assets/lentas.png";
 import ProductList from "../components/ProductList/ProductList"
 import { getProducts } from "../data/products";
 import Main from "../components/Main/Main";

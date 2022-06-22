@@ -1,6 +1,7 @@
 import { useParams } from "react-router-dom";
 import Header from "../components/Header/Header";
 import { getHomemade } from "../data/homemades";
+import CartButton from "../components/CartButton/CartButton";
 
 function Homemade() {
   const params = useParams();
@@ -17,6 +18,7 @@ function Homemade() {
         image={homemade.image}>
         {homemade.description}
       </Header>
+      <CartButton homemadeId={params.homemadeId}/>
     </>
   );
 }

@@ -1,5 +1,5 @@
 import Header from "../components/Header/Header";
-import headerImage from "../assets/lenta.png";
+import headerImage from "../assets/homework.jpg";
 import Main from "../components/Main/Main";
 import HomemadeList from "../components/HomemadeList/HomemadeList";
 import { getHomemades } from "../data/homemades";
