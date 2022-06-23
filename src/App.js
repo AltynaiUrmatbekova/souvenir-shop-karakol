@@ -12,13 +12,14 @@ import Homemades from "./pages/Homemades";
 import Cart from "./pages/Cart";
 import { useDispatch } from "react-redux";
 import { useEffect } from "react";
+import Checkout from "./pages/Checkout";
 
 function App() {
   const dispatch = useDispatch();
   
   useEffect(() => {
     dispatch({ type: 'cart/restore' });
-  }, []);
+  }, [dispatch]);
 
   return (
     <div className="App">
@@ -33,6 +34,7 @@ function App() {
           <Route path="/categories/:categoryId" element={<Category />} />
           <Route path="/contacts" element={<Contacts />} />
           <Route path="/cart" element={<Cart />} />
+          <Route path="/checkout" element={<Checkout />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </Layout>
