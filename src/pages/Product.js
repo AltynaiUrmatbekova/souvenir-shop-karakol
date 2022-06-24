@@ -21,7 +21,7 @@ function Product() {
           </button>
           <CartButton productId={params.productId} />
         </div>
-        <img style={{width: "400px"}} src={product.image} alt={product.title} />
+        {<img style={{width: "400px"}} src={product.image} alt={product.title} />}
       </div>
       <CartButton productId={params.productId}/>
     </>
