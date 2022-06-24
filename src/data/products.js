@@ -5,7 +5,6 @@ import productImage4 from "../assets/kalpak.jpg";
 import productImage5 from "../assets/telenok.jpeg";
 import productImage6 from "../assets/bag.jpg";
 
-
 const products = [
   {
     image: productImage,
@@ -24,13 +23,14 @@ const products = [
     price: 11,
   },
   {
-    image: productImage3, 
+    image: productImage3,
     categoryId: "accessories",
     productId: "urta",
     title: "Yurt",
     description: `Honey is produced by bees collecting nectar and honeydew for use as sugars consumed to support metabolism of muscle activity during foraging or to be stored as a long-term food supply.[14][15] During foraging, bees use part of the nectar collected to support metabolic activity of flight muscles, with the majority of collected nectar destined for regurgitation, digestion, and storage as honey.[14][16] In cold weather or when other food sources are scarce, adult and larval bees use stored honey as food.`,
     price: 12,
   },
+  
   {
     image: productImage4,
     categoryId: "natural",
@@ -55,21 +55,17 @@ const products = [
     title: "Bag",
     description: `The physical properties of honey vary, depending on water content, the type of flora used to produce it (pasturage), temperature, and the proportion of the specific sugars it contains. Fresh honey is a supersaturated liquid, containing more sugar than the water can typically dissolve at ambient temperatures. At room temperature, honey is a supercooled liquid, in which the glucose precipitates into solid granules. This forms a semisolid solution of precipitated glucose crystals in a solution of fructose and other ingredients.`,
     price: 12,
-  }
+  },
 ];
 
 export function getProducts(categoryId) {
   if (categoryId) {
-    return products.filter(product => product.categoryId === categoryId);
+    return products.filter((product) => product.categoryId === categoryId);
   }
   return products;
 }
-
-
 export function getProduct(productId) {
   return products[
-    products.findIndex(
-      product =>  product.productId === productId
-    )
+    products.findIndex((product) => product.productId === productId)
   ];
 }
