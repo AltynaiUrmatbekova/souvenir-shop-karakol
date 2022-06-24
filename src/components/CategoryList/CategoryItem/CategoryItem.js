@@ -7,7 +7,6 @@ function CategoryItem({ category }) {
       <img src={category.image} alt={category.title} />
       <div className={classes.container}>
         <Link to={"/categories/" + category.categoryId}>{category.title} </Link>
-      
       </div>
     </div>
   );
