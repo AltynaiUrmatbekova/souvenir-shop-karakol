@@ -1,6 +1,5 @@
-import Header from "../../components/Header/Header";
-import headerImage from "../../assets/cumki.jpg";
-import "./Contacts.module.css";
+import Header from "../components/Header/Header";
+import headerImage from "../assets/cumki.jpg";
 
 function Contacts() {
   return (
@@ -10,7 +9,7 @@ function Contacts() {
         the fun of exploring a new place, and you get to bring a little piece of
         it home with you!
       </Header>
-      <div className="Contacts">
+      <div>
         <ul>
           <li>Mobile Phone: 996 705 61 79 68</li>
           <li>Email Address: goldmoon1090@gmail.com</li>

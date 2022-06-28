@@ -14,23 +14,12 @@ function Product() {
     <>
       <div style={{ display: "flex", padding: "1rem 3rem" }}>
         <div
-          style={{ padding: "1rem", textAlign: "center", lineHeight: "50px" }}
+          style={{ padding: "1rem", textAlign: "center" }}
         >
           <h2 style={{ color: "black" }}>{product.title}</h2>
           <p style={{ color: "black" }}>{product.description}</p>
-          <button
-            style={{
-              width: "120px",
-              height: "30px",
-              backgroundColor: "white",
-              color: "black",
-              fontSize: "1rem",
-              fontWeight: "300",
-            }}
-          >
-            {product.price}$
-          </button>
-          <CartButton productId={params.productId} />
+        
+          { <CartButton productId={params.productId} /> }
         </div>
         {
           <img
@@ -40,7 +29,7 @@ function Product() {
           />
         }
       </div>
-      <CartButton productId={params.productId} />
+      {/* <CartButton productId={params.productId} /> */}
     </>
   );
 }

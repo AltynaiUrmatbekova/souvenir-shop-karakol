@@ -6,12 +6,7 @@ import telephone from "../../assets/phone.png";
 import { useSelector } from "react-redux";
 
 function Nav() {
-  const number = useSelector((store) => {
-    return Object.values(store.cart.items).reduce(
-      (sum, number) => sum + number,
-      0
-    );
-  });
+  const isAuthenticated = useSelector(store => store.auth.idToken !== null);
 
   const styles = {
     width: "40px",
@@ -30,8 +25,10 @@ function Nav() {
     <ul className={classes.Nav}>
       <NavItem url="/">Home</NavItem>
       <NavItem url="/products">Products</NavItem>
-      <NavItem url="/homemades">Homemades</NavItem>
+      {/* <NavItem url="/homemades">Homemades</NavItem> */}
       <NavItem url="/contacts">Contact</NavItem>
+      { isAuthenticated ? <NavItem url="/signout">Sign out</NavItem> : null }
+      { !isAuthenticated ? <NavItem url="/auth">Sign in</NavItem> : null }
       <NavItem url="#">
         <img src={search} alt="cart1" style={styles1} />
       </NavItem>

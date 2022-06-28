@@ -35,3 +35,8 @@
   background-color: burlywood;
   font-family: "Beau Rivage", cursive;
 }
+.cart {
+  background-color: aliceblue;
+  color: black;
+  border-radius: 15px;
+}
