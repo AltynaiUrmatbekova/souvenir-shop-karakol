@@ -17,7 +17,7 @@ function CartDisplay() {
       total += product.price * items[product.productId];
 
       return (
-        <div className={classes.item}>
+        <div className={classes.item} key={product.productId}>
           <Link to={"/cart/" + product.productId} className={classes.productCard}>
             <img src={product.image} alt={product.title} className={classes.productImage} />
             {product.title}
