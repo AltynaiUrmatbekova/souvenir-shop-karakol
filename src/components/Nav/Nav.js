@@ -1,6 +1,5 @@
 import classes from "./Nav.module.css";
 import NavItem from "./NavItem/NavItem";
-import icon from "../../assets/shopping-cart-icon.jpg";
 import search from "../../assets/search.png";
 import telephone from "../../assets/phone.png";
 import { useSelector } from "react-redux";
@@ -8,10 +7,6 @@ import { useSelector } from "react-redux";
 function Nav() {
   const isAuthenticated = useSelector(store => store.auth.idToken !== null);
 
-  const styles = {
-    width: "40px",
-    height: "40px",
-  };
   const styles1 = {
     width: "40px",
     height: "40px",
