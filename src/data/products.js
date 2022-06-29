@@ -8,7 +8,6 @@ import productImage7 from "../assets/card.jpg";
 import productImage8 from "../assets/sport.webp";
 import productImage9 from "../assets/winter.jpg";
 
-
 const products = [
   {
     image: productImage,
@@ -35,7 +34,6 @@ const products = [
     description: `Honey is produced by bees collecting nectar and honeydew for use as sugars consumed to support metabolism of muscle activity during foraging or to be stored as a long-term food supply.[14][15] During foraging, bees use part of the nectar collected to support metabolic activity of flight muscles, with the majority of collected nectar destined for regurgitation, digestion, and storage as honey.[14][16] In cold weather or when other food sources are scarce, adult and larval bees use stored honey as food.`,
     price: 12,
   },
-
   {
     image: productImage4,
     categoryId: "bird",
