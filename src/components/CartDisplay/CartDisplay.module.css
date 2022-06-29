@@ -2,9 +2,9 @@
   display: flex;
 }
 
- .Cart {
+.Cart {
   font-size: 17px;
-  font-family: 'Libre Baskerville', serif;
+  font-family: "Libre Baskerville", serif;
   text-transform: lowercase;
   line-height: 1.5em;
   text-align: center;
@@ -18,7 +18,8 @@
 .Cart .container .cartHeader {
   text-align: center;
 }
-.Cart .container h1, h2 {
+.Cart .container h1,
+h2 {
   text-transform: uppercase;
   font-family: italic;
   font-size: 2rem;
@@ -68,7 +69,7 @@
   border: 1px #0b1c2c solid;
   border-radius: 5px;
   font-size: 15px;
-  font-family: 'Libre Baskerville', serif;
+  font-family: "Libre Baskerville", serif;
   text-transform: lowercase;
   line-height: 1.5em;
 }
@@ -136,7 +137,9 @@
   .Cart .container h1 {
     margin: 20px 0;
   }
-  .Cart .container, .item, .productCard {
+  .Cart .container,
+  .item,
+  .productCard {
     margin: 0;
     flex-direction: column;
     justify-content: center;
@@ -161,4 +164,4 @@
   .Cart .container .totalPrice h2 {
     margin: 20px 0;
   }
-} 
+}
