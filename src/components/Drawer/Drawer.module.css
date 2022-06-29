@@ -1,4 +1,4 @@
- .Drawer .content {
+.Drawer .content {
   padding: 1rem 0;
   background-color: rgb(230, 220, 207);
   color: black;
@@ -41,4 +41,4 @@
   .Drawer .content {
     transform: translateX(-300px);
   }
-} 
+}
