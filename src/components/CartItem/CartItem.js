@@ -15,14 +15,26 @@ export default function CartItem({ product, actions, quantity }) {
         <Link to="">{product.title}</Link>
       </div>
       <div className={classes.quantity}>
-        {actions ? <button onClick={() => dispatch(decrement(product.productId))}>-</button> : null}
+        {actions ? (
+          <button onClick={() => dispatch(decrement(product.productId))}>
+            -
+          </button>
+        ) : null}
         {quantity}
-        {actions ? <button onClick={() => dispatch(increment(product.productId))}>+</button> : null}
+        {actions ? (
+          <button onClick={() => dispatch(increment(product.productId))}>
+            +
+          </button>
+        ) : null}
       </div>
       <div className={classes.subtotal}>
         ${product.price * quantity}
-        {actions ? <button onClick={() => dispatch(remove(product.productId))}>Delete</button> : null}
+        {actions ? (
+          <button onClick={() => dispatch(remove(product.productId))}>
+            Delete
+          </button>
+        ) : null}
       </div>
     </div>
-  )
+  );
 }
