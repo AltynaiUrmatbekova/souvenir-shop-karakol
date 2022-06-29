@@ -7,7 +7,7 @@ import { add } from "../../redux/cartSlice";
 
 export default function CartButton({ productId, price }) {
   const dispatch = useDispatch();
-  
+
   const params = useParams();
   const product = getProduct(params.productId);
 
@@ -20,6 +20,8 @@ export default function CartButton({ productId, price }) {
   }
 
   return (
-    <button className={classes.CartButton} onClick={onAddToCart}>Add to card - $ {product.price}</button>
+    <button className={classes.CartButton} onClick={onAddToCart}>
+      Add to card - $ {product.price}
+    </button>
   );
 }
