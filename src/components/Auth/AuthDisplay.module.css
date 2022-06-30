@@ -1,0 +1,48 @@
+.Auth form {
+  position: absolute;
+  top: 100px;
+  background-color: rgba(255, 255, 255, 0.973);
+  margin: 0 auto;
+  left: 50%;
+  text-align: center;
+  width: 100%;
+  max-width: 400px;
+  padding: 1rem;
+}
+.Auth form h1 {
+  margin: 20px 0;
+  text-transform: uppercase;
+  font-family: italic;
+  font-size: 1.5rem;
+  font-weight: normal;
+}
+.Auth form p {
+  font-family: "Libre Baskerville", serif;
+  font-size: 1rem;
+}
+.Auth form label {
+  display: block;
+  margin: 1.5rem 0;
+}
+.Auth form input {
+  width: 50%;
+  border: 1px solid black;
+  border-bottom: 1px solid rgb(172, 172, 172);
+  background-color: transparent;
+  padding: 10px 5px;
+  outline: none;
+}
+
+@media (max-width: 900px) {
+  .Auth form {
+    max-width: 300px;
+    min-width: 200px;
+    left: 10%;
+  }
+  .Auth form h1 {
+    font-size: 1.3rem;
+  }
+  .Auth form p {
+    font-size: 0.9rem;
+  }
+}
