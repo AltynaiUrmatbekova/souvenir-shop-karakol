@@ -7,6 +7,10 @@ import { useSelector } from "react-redux";
 function Nav() {
   const isAuthenticated = useSelector(store => store.auth.idToken !== null);
 
+  const styles = {
+    width: "40px",
+    height: "40px",
+  };
   const styles1 = {
     width: "40px",
     height: "40px",
