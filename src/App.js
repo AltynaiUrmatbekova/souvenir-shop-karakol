@@ -8,9 +8,9 @@ import NotFound from "./pages/NotFound";
 import Categories from "./pages/Categories";
 import Category from "./pages/Category";
 import Cart from "./pages/Cart";
-import Checkout from "./pages/Checkout";
 import Auth from "./pages/Auth";
 import SignOut from "./pages/SignOut";
+import Checkout from "./pages/Checkout";
 
 function App() {
   return (
