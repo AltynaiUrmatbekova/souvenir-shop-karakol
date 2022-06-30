@@ -5,6 +5,7 @@ import woolImage from "../assets/tree.jpg";
 import woolImage2 from "../assets/bear.jpg";
 import woolImage3 from "../assets/bird.jpg";
 
+
 const categories = [
   {
     categoryId: "gift",
@@ -21,21 +22,21 @@ const categories = [
       "Notably, the Inazuma Souvenir Shop does not open until you max out the Sacred Sakura Tree. Nearly all of your Electro Sigils will go toward upgrading the tree and getting tons of very worthwhile rewards from it. After you fully upgrade it, you can head over to the Inazuma Souvenir Shop, but it really only has some weapon enhancement material and furniture blueprints — nothing super interesting.",
   },
   {
-    categoryId: "accessories",
+    categoryId: "gift",
     title: "Accessories",
     image: accessoriesImage,
     description:
       "Notably, the Inazuma Souvenir Shop does not open until you max out the Sacred Sakura Tree. Nearly all of your Electro Sigils will go toward upgrading the tree and getting tons of very worthwhile rewards from it. After you fully upgrade it, you can head over to the Inazuma Souvenir Shop, but it really only has some weapon enhancement material and furniture blueprints — nothing super interesting.",
   },
   {
-    categoryId: "natural1",
+    categoryId: "camel",
     title: "Christmas tree",
     image: woolImage,
     description: `Honey is a sweet, viscous food substance made by honey bees and some other bees.[1][2] Bees produce honey from the sugary secretions of plants (floral nectar) or from secretions of other insects (such as honeydew), by regurgitation, enzymatic activity, and water evaporation. Honey bees store honey in wax structures called honeycombs, whereas stingless bees store honey in pots made of wax and resin.`,
     price: 15,
   },
   {
-    categoryId: "natural2",
+    categoryId: "camel",
     title: "White bear toy",
     image: woolImage2,
     description: `he variety of honey produced by honey bees (the genus Apis) is the best-known, due to its worldwide commercial production and human consumption.[4] Honey is collected from wild bee colonies, or from hives of domesticated bees, a practice known as beekeeping or apiculture (meliponiculture in the case of stingless bees)`,
