@@ -6,12 +6,9 @@ export default function SignOut() {
   const dispatch = useDispatch();
   const navigate = useNavigate();
   useEffect(() => {
-    dispatch({ type: 'auth/init' });
-    navigate('/');
-  }, );
+    dispatch({ type: "auth/init" });
+    navigate("/");
+  });
 
-
-
-
-  return 'asd';
-} 
+  return "asd";
+}

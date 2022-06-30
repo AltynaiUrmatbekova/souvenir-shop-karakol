@@ -1,49 +1,34 @@
 import Header from "../components/Header/Header";
 import image from "../assets/cart.jpg";
 import { useDispatch, useSelector } from "react-redux";
-import { getProducts } from "../data/products";
-import { Link, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import { checkout } from "../redux/cartSlice";
+import CartDisplay from "../components/CartDisplay/CartDisplay";
 import { useEffect } from "react";
 
 function Checkout() {
   const dispatch = useDispatch();
   const navigate = useNavigate();
-  const products = getProducts();
-
-  const { items, localId } = useSelector((store) => ({
+  const { items, localId } = useSelector(store => ({
     items: store.cart.items,
-    localId: store.auth.localId,
-   }));
-  
-   useEffect(() => {
-     if (!localId) {
-       navigate('/auth');
-     }
-   }, [localId, navigate]);
+    localId: store.auth.localId
+  }));
 
-  let total = 0;
-  let output = products
-    .filter(product => items[product.productId])
-    .map(product => {
-      total += product.price * items[product.productId];
-
-      return (
-        <div key={product.productId}>
-          <Link to="">{product.title}</Link> {items[product.productId]} ${product.price * items[product.productId]}
-        </div>
-      );
-    });
-
-  if (!output) {
-    output = "No items in the cart.";
-  }
+  useEffect(() => {
+    if (!localId) {
+      navigate('/auth');
+    }
+  }, [localId, navigate]);
 
   function onCheckout(event) {
     event.preventDefault();
 
     const formData = new FormData(event.target);
-    dispatch(checkout(Object.fromEntries(formData.entries())));
+    dispatch(checkout({
+      localId: localId,
+      items: items,
+      ...Object.fromEntries(formData.entries()),
+    }));
     navigate('/');
   }
 
@@ -54,33 +39,29 @@ function Checkout() {
         image={image}>
         Please enter your information.
       </Header>
-      <div>
-        {output}
-        <hr />
-        Total: ${total}
 
-        <form onSubmit={onCheckout}>
-          <label>
-            First name:
-            <input type="text" name="firstName" required />
-          </label>
-          <label>
-            Last name:
-            <input type="text" name="lastName" required />
-          </label>
-          <label>
-            Address:
-            <input type="text" name="address" required />
-          </label>
-          <label>
-            Phone:
-            <input type="text" name="phone" required />
-          </label>
+      <CartDisplay />
 
-          <button>Complete the order</button>
-        </form>
+      <form onSubmit={onCheckout}>
+        <label>
+          First name:
+          <input type="text" name="firstName" required />
+        </label>
+        <label>
+          Last name:
+          <input type="text" name="lastName" required />
+        </label>
+        <label>
+          Address:
+          <input type="text" name="address" required />
+        </label>
+        <label>
+          Phone:
+          <input type="text" name="phone" required />
+        </label>
 
-      </div>
+        <button>Complete the order</button>
+      </form>
     </>
   );
 }

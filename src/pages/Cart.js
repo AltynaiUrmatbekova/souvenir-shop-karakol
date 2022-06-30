@@ -5,9 +5,7 @@ import CartDisplay from "../components/CartDisplay/CartDisplay";
 function Cart() {
   return (
     <>
-      <Header
-        title="Your Shopping Cart"
-        image={image}>
+      <Header title="Your Shopping Cart" image={image}>
         Please review items in your cart.
       </Header>
 
